@@ -1,7 +1,6 @@
 package com.liu.crud.test;
 
 import com.github.pagehelper.PageInfo;
-import com.liu.crud.bean.Employee;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +27,9 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration  // 引入ioc自身的注解
-@ContextConfiguration(locations = {"classpath:applicationContext.xml", "file:src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml"})
+@ContextConfiguration(locations = {"classpath:applicationContext.xml",
+        "file:src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml"})
+
 public class CRUDTest {
 
     // 传入springmvc的ioc
